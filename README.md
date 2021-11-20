@@ -3,4 +3,4 @@
 
 Ejecute los siguientes comandos:
 
-npm instaall 
+npm install
