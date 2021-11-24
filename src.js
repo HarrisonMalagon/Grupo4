@@ -1,6 +1,6 @@
-import CITAS from 'global'
+
 //Array CITAS que simula el archivo en el ambiente de pruebas
-/* 
+/*  
 CITAS = [
     {
         especialidad:"odontologia",
@@ -38,7 +38,7 @@ CITAS = [
         fecha:"2020-01-01",
         hora:"16:00",
     }
-] */
+]  */
 //console.info(CITAS);
 
    
@@ -57,11 +57,11 @@ CITAS = [
         const horaFin = new Date();
 
         if (jornadaPreferida === "mañana") { 
-            horaInicio.setHours(08,00);
-            horaFin.setHours(12,00);
+            horaInicio.setHours("08","00");
+            horaFin.setHours("12","00");
         } else if (jornadaPreferida === "tarde"){
-            horaInicio.setHours(13,00);
-            horaFin.setHours(17,00);
+            horaInicio.setHours("13","00");
+            horaFin.setHours("17","00");
         }
         
         let resultados = obtenerCitasDisponibles (especialidad, fecha_inicio, fecha_final);
@@ -70,7 +70,6 @@ CITAS = [
             let horaDiv = resultado.hora.split(":");
             const citaFinal = new Date;
             citaFinal2 = citaFinal.setHours(horaDiv[0],horaDiv[1]);
-            console.log (citaFinal2);
             return citaFinal2 >= horaInicio & citaFinal2 <= horaFin;
         });      
     }
@@ -78,5 +77,5 @@ CITAS = [
 //console.info(obtenerCitasPorJornada("medicina", "2019-12-31", "2020-02-12", "mañana"));
 
 
- module.exports.obtenerCitasDisponibles=obtenerCitasDisponibles;
- module.exports.obtenerCitasPorJornada=obtenerCitasPorJornada;
+module.exports.obtenerCitasDisponibles=obtenerCitasDisponibles;
+module.exports.obtenerCitasPorJornada=obtenerCitasPorJornada;
