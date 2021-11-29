@@ -41,7 +41,7 @@ CITAS = [
 ]  */
 //console.info(CITAS);
 
-   
+
     const obtenerCitasDisponibles = (especialidad,fecha_inicio, fecha_final) =>{
     formatFechaInicio = Date.parse(fecha_inicio);
     formatFechaFinal = Date.parse(fecha_final);
@@ -74,6 +74,7 @@ CITAS = [
         });      
     }
 
+//console.info(obtenerCitasPorJornada("medicina", "2019-12-31", "2020-02-12", "mañana"));
 //console.info(obtenerCitasPorJornada("medicina", "2019-12-31", "2020-02-12", "mañana"));
 
 
