@@ -33,8 +33,8 @@ const confirmarCita = async (idCita) => {
   return res;
 };
 
-// console.info(obtenerCitasDisponibles("odontología", "2020-01-01", "2021-06-06"));
-// console.table(obtenerCitasDisponibles("medicina", "2020-01-01", "2021-06-06"));
+console.info(obtenerCitasDisponibles("odontología", "2020-01-01", "2021-06-06"));
+// console.table(obtenerCitasDisponibles("medicina", "2020-01-01", "2020-01-01"));
 
 // module.exports.obtenerCitasDisponibles = obtenerCitasDisponibles;
 // module.exports.confirmarCita = confirmarCita;
